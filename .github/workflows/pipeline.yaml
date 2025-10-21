@@ -70,7 +70,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [build, test]
 
-    step:
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
