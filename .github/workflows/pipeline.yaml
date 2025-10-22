@@ -99,6 +99,7 @@ jobs:
       - name: Deploy Firebase
         run: |
           export GOOGLE_APPLICATION_CREDENTIALS=$HOME/private-key.json
+          firebase login --reauth
           firebase experiments:enable webframeworks
           firebase deploy --only hosting
 
